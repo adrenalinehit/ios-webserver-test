@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        WebView(request: URLRequest(url: URL(string: "https://www.apple.com")!))
+        WebView(request: URLRequest(url: URL(string: "http://SBGML06549.local:8080/")!))
     }
 }
 

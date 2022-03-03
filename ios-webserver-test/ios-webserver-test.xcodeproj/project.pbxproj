@@ -12,15 +12,19 @@
 		D3A74C6127D131D000C18567 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3A74C6027D131D000C18567 /* Assets.xcassets */; };
 		D3A74C6427D131D000C18567 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3A74C6327D131D000C18567 /* Preview Assets.xcassets */; };
 		D3A74C6B27D131EF00C18567 /* Webview.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A74C6A27D131EF00C18567 /* Webview.swift */; };
+		EB0FE8BB28453DBD2737F5A1 /* Pods_ios_webserver_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E89210BD084E68E55A66C38F /* Pods_ios_webserver_test.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		022C4515637909030DD05F8C /* Pods-ios-webserver-test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-webserver-test.debug.xcconfig"; path = "Target Support Files/Pods-ios-webserver-test/Pods-ios-webserver-test.debug.xcconfig"; sourceTree = "<group>"; };
 		D3A74C5927D131CF00C18567 /* ios-webserver-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-webserver-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3A74C5C27D131CF00C18567 /* ios_webserver_testApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_webserver_testApp.swift; sourceTree = "<group>"; };
 		D3A74C5E27D131CF00C18567 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D3A74C6027D131D000C18567 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D3A74C6327D131D000C18567 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D3A74C6A27D131EF00C18567 /* Webview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webview.swift; sourceTree = "<group>"; };
+		E89210BD084E68E55A66C38F /* Pods_ios_webserver_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_webserver_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA712ADFB1894D01C376EF30 /* Pods-ios-webserver-test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-webserver-test.release.xcconfig"; path = "Target Support Files/Pods-ios-webserver-test/Pods-ios-webserver-test.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,17 +32,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB0FE8BB28453DBD2737F5A1 /* Pods_ios_webserver_test.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		53F81F9781111FFA078A9BF5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				022C4515637909030DD05F8C /* Pods-ios-webserver-test.debug.xcconfig */,
+				EA712ADFB1894D01C376EF30 /* Pods-ios-webserver-test.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D3A74C5027D131CF00C18567 = {
 			isa = PBXGroup;
 			children = (
 				D3A74C5B27D131CF00C18567 /* ios-webserver-test */,
 				D3A74C5A27D131CF00C18567 /* Products */,
+				53F81F9781111FFA078A9BF5 /* Pods */,
+				EBE2E70DD6A7585058B17497 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +87,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		EBE2E70DD6A7585058B17497 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E89210BD084E68E55A66C38F /* Pods_ios_webserver_test.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D3A74C6727D131D000C18567 /* Build configuration list for PBXNativeTarget "ios-webserver-test" */;
 			buildPhases = (
+				336F947D205238EB4F5D842F /* [CP] Check Pods Manifest.lock */,
 				D3A74C5527D131CF00C18567 /* Sources */,
 				D3A74C5627D131CF00C18567 /* Frameworks */,
 				D3A74C5727D131CF00C18567 /* Resources */,
+				7D4154CD23D37C9183AFAF58 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -134,6 +161,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		336F947D205238EB4F5D842F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ios-webserver-test-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D4154CD23D37C9183AFAF58 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ios-webserver-test/Pods-ios-webserver-test-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ios-webserver-test/Pods-ios-webserver-test-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ios-webserver-test/Pods-ios-webserver-test-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D3A74C5527D131CF00C18567 /* Sources */ = {
@@ -267,6 +336,7 @@
 		};
 		D3A74C6827D131D000C18567 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 022C4515637909030DD05F8C /* Pods-ios-webserver-test.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -296,6 +366,7 @@
 		};
 		D3A74C6927D131D000C18567 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA712ADFB1894D01C376EF30 /* Pods-ios-webserver-test.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
